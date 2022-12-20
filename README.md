@@ -4,7 +4,7 @@ SV (*ScalableWriter*) is a small library which can generate SVG code.
 # Install
 ```
 # PIP
-pip install Scalable
+pip install ScalableWriter
 
 # GIT+PIP
 pip install git+https://github.com/ZSendokame/Scalable.git

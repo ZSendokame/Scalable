@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 long_description = open('./README.md')
 
 setup(
-    name='Scalable',
+    name='ScalableWriter',
     version='1.0.0',
     url='https://github.com/ZSendokame/Scalable',
     license='MIT license',
