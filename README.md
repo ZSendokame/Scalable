@@ -25,5 +25,7 @@ svg.rectangle(
 svg.ellipse(cx=205, cy=120, rx=43, ry=91, fill="red", stroke="black")
 svg.ellipse(cx=210, cy=70, rx=30, ry=15, fill="white", stroke="black")
 svg.line(x1=151, y1=62, x2=169, y2=62, stroke="#aa0000", stroke_width=2)
+
+# Save the file.
 svg.save()
 ```
