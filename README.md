@@ -14,8 +14,10 @@ pip install git+https://github.com/ZSendokame/Scalable.git
 ```py
 import scalable
 
+# Specify output file, it also accepts a width and height arguments.
 svg = scalable.SVG("output.html")
 
+# The functions accept every keyword, translating them into SVG.
 svg.rectangle(
     x=150, y=60, width=25, height=75,
     fill="red", stroke="black", stroke_width=2
