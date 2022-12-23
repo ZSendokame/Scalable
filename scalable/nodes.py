@@ -54,3 +54,8 @@ class Polygon(Node):
 class Ellipse(Node):
     def tag(self, **attrs) -> str:
         return self.__str__('ellipse', attrs)
+
+
+class Tspan(Node):
+    def tag(self, text: str, **attrs) -> str:
+        return self.__str__('tspan', attrs, text)

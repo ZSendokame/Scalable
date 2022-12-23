@@ -42,6 +42,11 @@ class SVG:
 
         return node
 
+    def tspan(self, text: str, **attrs) -> str:
+        node = Tspan()
+
+        return node.tag(text, **attrs)
+
     def save(self) -> None:
         self.svg += '</svg>'
 
