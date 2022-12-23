@@ -4,11 +4,11 @@ long_description = open('./README.md')
 
 setup(
     name='ScalableWriter',
-    version='1.0.0',
+    version='1.1.0',
     url='https://github.com/ZSendokame/Scalable',
     license='MIT license',
     author='ZSendokame',
-    description='Generate SVG code on a programatic way.',
+    description='Generate SVG code on a programmatic way.',
     long_description=long_description.read(),
     long_description_content_type='text/markdown',
 
