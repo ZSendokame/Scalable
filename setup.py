@@ -4,7 +4,7 @@ long_description = open('./README.md')
 
 setup(
     name='ScalableWriter',
-    version='1.1.0',
+    version='1.2.1',
     url='https://github.com/ZSendokame/Scalable',
     license='MIT license',
     author='ZSendokame',
