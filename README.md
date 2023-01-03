@@ -1,5 +1,5 @@
 # ScalableWriter
-SV (*ScalableWriter*) is a small library which can generate SVG code.
+*ScalableWriter* is a small library which can generate SVG code.
 
 # Install
 ```
