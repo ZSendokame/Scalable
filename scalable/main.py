@@ -4,7 +4,15 @@ from .nodes import *
 class SVG:
     def __init__(self, output: str = None, height=500, width=500):
         self.output = output
-        self.svg = f'<svg height="{height}" width="{width}">\n'
+        self.svg = Node().__str__(
+            'svg', attrs={
+                'xmlns': 'http://www.w3.org/2000/svg',
+                'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+                'height': height,
+                'width': width
+            },
+            close=False
+        ) + '\n'
 
     def circle(self, **attrs) -> Circle:
         node = Circle()
@@ -32,6 +40,12 @@ class SVG:
 
     def polyline(self, **attrs) -> Polyline:
         node = Polyline()
+        self.svg += node.tag(**attrs) + '\n'
+
+        return node
+
+    def polygon(self, **attrs) -> Polygon:
+        node = Polygon()
         self.svg += node.tag(**attrs) + '\n'
 
         return node

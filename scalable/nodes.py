@@ -3,7 +3,7 @@ def to_str(iterable: list) -> list[str]:
 
 
 class Node:
-    def __str__(self, tag: str, attrs: dict, text: str = None) -> str:
+    def __str__(self, tag: str, attrs: dict, text: str = '', close: bool = True) -> str:
         result = '<' + tag
 
         for attr, value in attrs.items():
@@ -18,7 +18,7 @@ class Node:
 
             result += f' {attr}="{value}"'
 
-        return result + ('>' if text is None else '>' + text) + f'</{tag}>'
+        return result + '>' + text + (f'</{tag}>' if close else '')
 
 
 class Circle(Node):
